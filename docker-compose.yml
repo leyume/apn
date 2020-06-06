@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  quick-php:
+    build: .
+    # image: leyume/alpine-php:1.0.3
+    restart: always
+    # volumes:
+      # - ./api:/config/www/
+      # - ./nginx:/config/nginx
+      # - ./php:/config/php
+    ports:
+      - "9999:8080"
+    # depends_on:
+    #   - abc-data
+    # links:
+    #   - abc-data
